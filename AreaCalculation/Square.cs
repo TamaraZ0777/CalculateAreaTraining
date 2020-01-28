@@ -11,15 +11,23 @@ namespace AreaCalculation
 
         public Square(double side)
         {
-            this.side = side;
+            Side = side;
+            Area = GetArea(side);
         }
 
-        public double getSide()
+        public double Side
         {
-            return side;
+            get { return side; }
+            set { side = value; }
         }
 
-        public double getArea()
+        public double Area
+        {
+            get { return area; }
+            private set { area = value; }
+        }
+
+        private double GetArea(double side)
         {
             return side * side;
         }

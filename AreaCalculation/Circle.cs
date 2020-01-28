@@ -11,15 +11,23 @@ namespace AreaCalculation
 
         public Circle(double radius)
         {
-            this.radius = radius;
+            Radius = radius;
+            Area = GetArea(radius);
         }
 
-        public double getRadius()
+        public double Radius 
         {
-            return radius;
+            get { return radius; }
+            set { radius = value; }
         }
 
-        public double getArea()
+        public double Area 
+        {
+            get { return area; }
+            private set { area = value; }
+        }
+
+        public double GetArea(double radius)
         {
             return Math.PI * radius * radius;
         }
