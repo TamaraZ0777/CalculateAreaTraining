@@ -1,0 +1,11 @@
+D:\CSharpCourse\AreaCalculation\AreaCalculation\bin\Debug\netcoreapp3.1\AreaCalculation.exe
+D:\CSharpCourse\AreaCalculation\AreaCalculation\bin\Debug\netcoreapp3.1\AreaCalculation.deps.json
+D:\CSharpCourse\AreaCalculation\AreaCalculation\bin\Debug\netcoreapp3.1\AreaCalculation.runtimeconfig.json
+D:\CSharpCourse\AreaCalculation\AreaCalculation\bin\Debug\netcoreapp3.1\AreaCalculation.runtimeconfig.dev.json
+D:\CSharpCourse\AreaCalculation\AreaCalculation\bin\Debug\netcoreapp3.1\AreaCalculation.dll
+D:\CSharpCourse\AreaCalculation\AreaCalculation\bin\Debug\netcoreapp3.1\AreaCalculation.pdb
+D:\CSharpCourse\AreaCalculation\AreaCalculation\obj\Debug\netcoreapp3.1\AreaCalculation.csprojAssemblyReference.cache
+D:\CSharpCourse\AreaCalculation\AreaCalculation\obj\Debug\netcoreapp3.1\AreaCalculation.AssemblyInfoInputs.cache
+D:\CSharpCourse\AreaCalculation\AreaCalculation\obj\Debug\netcoreapp3.1\AreaCalculation.AssemblyInfo.cs
+D:\CSharpCourse\AreaCalculation\AreaCalculation\obj\Debug\netcoreapp3.1\AreaCalculation.dll
+D:\CSharpCourse\AreaCalculation\AreaCalculation\obj\Debug\netcoreapp3.1\AreaCalculation.pdb
