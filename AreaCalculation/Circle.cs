@@ -6,19 +6,19 @@ namespace AreaCalculation
 {
     class Circle
     {
-        private double radius;
+        private double _radius;
         private double area;
 
         public Circle(double radius)
         {
-            Radius = radius;
+            _radius = radius;
             Area = GetArea(radius);
         }
 
         public double Radius 
         {
-            get { return radius; }
-            set { radius = value; }
+            get { return _radius; }
+            //set { _radius = value; }
         }
 
         public double Area 
