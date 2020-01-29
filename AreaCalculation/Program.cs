@@ -45,14 +45,14 @@ namespace AreaCalculation
             //        Console.WriteLine(
             //        "Invalid input. Please enter a valid number");
             //    }
-            if value = 0
+            //if value = 0
                 {
                 Console.WriteLine("Incorrect data entered 3 times. The side of the square and the circle radius will be set randomly");
                 Random r = new Random();
                 radius = r.NextDouble() * (5.0 - 0.5);
                 side = r.NextDouble() * (5.0 - 0.5);
                 }
-        }
+        
            // area = Math.PI * radius * radius;
             //Console.WriteLine(
               //  $"The area of the circle is: { area: 0.00}");
@@ -74,19 +74,80 @@ namespace AreaCalculation
                 }
                 return 0;
 
-            if (value = 0)
-                {
+                //if (value <= 0)
+                           
                 Console.WriteLine("Incorrect data entered 3 times. The side of the square and the circle radius will be set randomly");
-                public double RandomNumber(double min, double max);
-                {
-                    Random random = new Random();
-                    return random.Next(0.5, 5.0);
-                }
-                Random r = new Random();
-                radius = r.NextDouble() * (5.0 - 0.5);
-                side = r.NextDouble() * (5.0 - 0.5);
+
+                //var value = 0.5 + (random.NextDouble() * (5.0 - 0.5));
+
+                //public static double RandomNumber(double min, double max)
+
+                //{
+                //     Random random = new Random(value);
+                //     return random.NextDouble(0.5, 5.0);
+                //}
+                //    Random r = new Random();
+                //    radius = r.NextDouble() * (5.0 - 0.5);
+                //    side = r.NextDouble() * (5.0 - 0.5);
+                //
+                var area = circle.GetArea (double radius);
+
+
             }
+        
         }
         
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
