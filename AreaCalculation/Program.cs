@@ -16,7 +16,7 @@ namespace AreaCalculation
             Console.WriteLine($"The circle's area is: {Math.Round(circle.Area, 2)}.");
             Console.WriteLine($"The square's area is: {Math.Round(square.Area, 2)}.");
 
-           
+
             static double ReadValueFromConsole(string message)
             {
                 for (int i = 0; i < 3; i++)
@@ -53,8 +53,6 @@ namespace AreaCalculation
 
                 return data;
             }
-
-           
 
         }
 

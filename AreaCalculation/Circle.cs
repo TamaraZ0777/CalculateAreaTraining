@@ -18,7 +18,7 @@ namespace AreaCalculation
         public double Radius 
         {
             get { return radius; }
-            //set { _radius = value; }
+            //set { radius = value; }
         }
 
         public double Area 
