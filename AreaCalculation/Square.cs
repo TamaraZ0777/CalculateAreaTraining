@@ -11,14 +11,14 @@ namespace AreaCalculation
 
         public Square(double side)
         {
-            Side = side;
+            //Side = side;
             Area = GetArea(side);
         }
 
         public double Side
         {
             get { return side; }
-            set { side = value; }
+            //set { side = value; }
         }
 
         public double Area
