@@ -6,28 +6,28 @@ namespace AreaCalculation
 {
     class Circle
     {
-        private double radius;
-        private double area;
+        private double _radius;
+        private double _area;
 
         public Circle(double radius)
         {
-            //Radius = radius;
-            Area = GetArea(radius);
+            Radius = radius;
+            Area = GetArea(Radius);
         }
 
         public double Radius 
         {
-            get { return radius; }
-            //set { radius = value; }
+            get { return _radius; }
+            private set { _radius = value; }
         }
 
         public double Area 
         {
-            get { return area; }
-            private set { area = value; }
+            get { return _area; }
+            private set { _area = value; }
         }
 
-        public double GetArea(double radius)
+        private double GetArea(double radius)
         {
             return Math.PI * radius * radius;
         }

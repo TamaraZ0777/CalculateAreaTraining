@@ -16,6 +16,8 @@ namespace AreaCalculation
             Console.WriteLine($"The circle's area is: {Math.Round(circle.Area, 2)}.");
             Console.WriteLine($"The square's area is: {Math.Round(square.Area, 2)}.");
 
+            Console.WriteLine(CompareFigures(circle.Radius, square.Side));
+
 
             static double ReadValueFromConsole(string message)
             {
@@ -38,22 +40,55 @@ namespace AreaCalculation
 
             }
 
-            double ValidateInput (double data) 
+            static double ValidateInput (double parsedInput) 
             {
 
-                if (data <= 0) 
+                if (parsedInput <= 0) 
                 {
                     Console.WriteLine("Incorrect data entered 3 times. The value is set randomly in the range from 0,5 to 5,0:");
 
-                    Random r = new Random();
-                    data = r.NextDouble() * (5.0 - 0.5) + 0.5;
+                    Random random = new Random();
+                    parsedInput = random.NextDouble() * (5.0 - 0.5) + 0.5;
 
-                    Console.WriteLine($"assigned value is {Math.Round(data, 2)}.");
+                    Console.WriteLine($"assigned value is {Math.Round(parsedInput, 2)}.");
                 }
 
-                return data;
+                return parsedInput;
             }
 
+            static string CompareFigures(double radius, double side) 
+            {
+                string comparisonResult;
+
+                
+                if (side > (radius * 2))
+                {
+                    comparisonResult = "The circle fits in the square.";
+                }
+                    
+                else if (side == (radius * 2))
+                {
+                    comparisonResult = "The circle fits in the square with the borders overlap.";
+                }
+
+                else if ((side * Math.Sqrt(2)) < (2 * radius))
+                {
+                    comparisonResult = "The square fits in the circle.";
+                }
+                   
+                else if ((side * (Math.Sqrt(2))) == (2 * radius))
+                {
+                    comparisonResult = "The square fits in the circle with the borders overlap.";
+                }
+                 
+                else
+                {
+                    comparisonResult = "Neither the square fits in the circle, nor the circle fits in the square.";
+                }
+                   
+
+                return comparisonResult;
+            }
         }
 
     }
