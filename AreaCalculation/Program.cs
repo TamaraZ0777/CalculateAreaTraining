@@ -6,17 +6,17 @@ namespace AreaCalculation
     {
         static void Main(string[] args)
         {
-            var radius = NumberValidation(ReadValueFromConsole("Please enter the circle radius: "));
-            var side = NumberValidation(ReadValueFromConsole("Please enter the square side: "));
+            var radius = ValidateInput(ReadValueFromConsole("Please enter the circle radius: "));
+            var side = ValidateInput(ReadValueFromConsole("Please enter the square side: "));
 
             Circle circle = new Circle(radius);
             Square square = new Square(side);
 
-            
+                       
             Console.WriteLine($"The circle's area is: {Math.Round(circle.Area, 2)}.");
             Console.WriteLine($"The square's area is: {Math.Round(square.Area, 2)}.");
 
-
+           
             static double ReadValueFromConsole(string message)
             {
                 for (int i = 0; i < 3; i++)
@@ -38,7 +38,7 @@ namespace AreaCalculation
 
             }
 
-            double NumberValidation (double data) 
+            double ValidateInput (double data) 
             {
 
                 if (data <= 0) 
@@ -54,8 +54,10 @@ namespace AreaCalculation
                 return data;
             }
 
+           
+
         }
-        
+
     }
 
 }
